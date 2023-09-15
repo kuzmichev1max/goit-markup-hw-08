@@ -228,7 +228,6 @@ img {
 
 .footer-adress__item {
   margin-bottom: 8px;
-  height: 21px;
 }
 
 .footer-adress__item:last-child {
@@ -307,7 +306,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
     margin-top: 0;
-    margin-left: 93px;
+    margin-left: 70px;
     display: flex;
   }
 }
@@ -345,6 +344,13 @@ img {
   .footer-subscribe__text {
     text-align: left;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__box {
+    display: flex;
+    align-items: baseline;
   }
 }
 
