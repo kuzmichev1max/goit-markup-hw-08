@@ -39,4 +39,11 @@
   letter-spacing: 1.56px;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: calc(60 / 44);
+    letter-spacing: 2.64px;
+  }
 }

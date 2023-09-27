@@ -20,10 +20,6 @@
   <header class="header">
     <div class="container header-container">
       <a href="index.html" lang="en" class="header-logo">Web<span class="logo__text">Studio</span></a>
-      <svg class="heander-menu" width="40" height="40">
-        <use href="./images/sprite.svg#icon-menu"></use>
-        <use href="./images/sprite.svg#icon-menu-close"></use>
-      </svg>
       <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -54,6 +50,11 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Switch mibile menu">
+          <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -383,6 +384,50 @@
       </div>
     </section>
   </main>
+  <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40" aria-label="Switch mibile menu">
+        <use class="icon-menu" href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="./index.html" class="mobile-menu__link">Studio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="" class="mobile-menu__link">Contacts</a>
+      </li>
+    </ul>
+    <div>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu_contacts_item">
+          <a href="tel:+1 212-772-4150" class="mobile-menu_contacts-tel">+1 212-772-4150</a>
+        </li>
+        <li class="mobile-menu_contacts_item">
+          <a href="mailto:info@devstudio.com"
+            class="mobile-menu_contacts-mail">info@devstudio.com</a>
+          </li>
+      </ul>
+      <ul class="mobile-menu__social">
+        <li class="mobile-menu_social-item">
+          <a href="instagram.com" class="mobile-menu_social-link">Instagram</a>
+        </li>
+        <li class="mobile-menu_social-item">
+          <a href="twitter.com" class="mobile-menu_social-link">Twitter</a>
+        </li>
+        <li class="mobile-menu_social-item">
+          <a href="facebook.com" class="mobile-menu_social-link">Facebook</a>
+        </li>
+        <li class="mobile-menu_social-item">
+          <a href="linkedin.com" class="mobile-menu_social-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
   <footer class="page-footer">
     <div class="container footer-container">
@@ -523,6 +568,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
