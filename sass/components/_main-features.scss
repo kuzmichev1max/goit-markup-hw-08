@@ -21,13 +21,13 @@
 }
 
 .features-section__list {
-  @media screen and (min-width: 768px) {
+  @media screen and ($tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: -15px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and ($desktop) {
       gap: 30px;
       margin: 0;
     }
@@ -35,27 +35,22 @@
 }
 
 .features-section__item {
-  @media screen and (min-width: 768px) {
+  @media screen and ($tablet) {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and ($tablet-only) {
   &:not(:last-child) {
     margin-bottom: 30px;
   }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and ($desktop) {
     width: 270px;
     margin: 0;
   }
 }
-
-
-// .features-section__list {
-//   width: 270px;
-// }
 
 .features-section__heading {
   margin-bottom: 10px;

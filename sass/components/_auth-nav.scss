@@ -1,7 +1,7 @@
 .auth-nav {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and ($tablet) {
     display: flex;
     margin-left: auto;
     flex-direction: column;
@@ -9,19 +9,11 @@
     gap: 10px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and ($desktop) {
     margin-left: auto;
     flex-direction: row;
     gap: 30px;
   }
-}
-
-.auth-nav__item {
-  // margin-left: 40px;
-}
-
-.auth-nav__item:nth-child(1) {
-  margin-left: 0;
 }
 
 .auth-nav__link {

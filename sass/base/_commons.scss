@@ -31,6 +31,8 @@ h3 {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .section-heading {
@@ -43,7 +45,7 @@ img {
   font-weight: 700;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and ($desktop) {
     margin-bottom: 50px;
     font-size: 36px;
     letter-spacing: 1.08px;
