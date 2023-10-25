@@ -1,28 +1,26 @@
-.container {  
+.container {
   box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and ($mobile) {
+  @include mq(mobile) {
     width: 450px;
   }
 
-  @media screen and ($tablet) {
+  @include mq(tablet) {
     width: 738px;
   }
 
-  @media screen and ($desktop) {
+  @include mq(desktop) {
     width: 1170px;
   }
-} 
+}
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and ($desktop) {
+  @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

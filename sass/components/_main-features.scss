@@ -21,32 +21,44 @@
 }
 
 .features-section__list {
-  @media screen and ($tablet) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: -15px;
-
-    @media screen and ($desktop) {
-      gap: 30px;
-      margin: 0;
-    }
   }
+
+  @include mq(desktop) {
+    gap: 30px;
+      margin: 0;
+  }
+
+  // @media screen and ($tablet) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   margin: -15px;
+
+  //   @media screen and ($desktop) {
+  //     gap: 30px;
+  //     margin: 0;
+  //   }
+  // }
 }
 
 .features-section__item {
-  @media screen and ($tablet) {
+  @include mq(tablet) {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
 
-  @media screen and ($tablet-only) {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  @include mq(tablet-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
-  @media screen and ($desktop) {
+  @include mq(desktop) {
     width: 270px;
     margin: 0;
   }
@@ -60,9 +72,10 @@
   text-transform: uppercase;
   color: var(--color-caption);
 
-  @media screen and (min-width: 768px) {
+
+  @include mq (tablet) {
     text-align: start;
-}
+  }
 }
 
 .features-section__text {
