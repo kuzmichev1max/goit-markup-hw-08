@@ -30,7 +30,7 @@
 
   @include mq(desktop) {
     gap: 30px;
-      margin: 0;
+    margin: 0;
   }
 
   // @media screen and ($tablet) {
@@ -72,8 +72,7 @@
   text-transform: uppercase;
   color: var(--color-caption);
 
-
-  @include mq (tablet) {
+  @include mq(tablet) {
     text-align: start;
   }
 }
