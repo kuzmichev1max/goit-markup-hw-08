@@ -133,7 +133,8 @@
         <ul class="work__list">
           <li>
             <div class="work__thumb">
-              <img src="images/box1.jpg" alt="Пишемо програми" width="370" />
+              <img srcset="./images/work/work1.jpg 1x, ./images/work/work1@2x.jpg 2x" src="/images/work/work1.jpg"
+                alt="Пишемо програми" width="370" />
               <div class="work__content">
                 <p class="work__text">десктопні додатки</p>
               </div>
@@ -141,7 +142,8 @@
           </li>
           <li>
             <div class="work__thumb">
-              <img src="images/box2.jpg" alt="Перевіряємо" width="370" />
+              <img srcset="./images/work/work2.jpg 1x, ./images/work/work2@2x.jpg 2x" src="/images/work/work2.jpg"
+                alt="Перевіряємо" width="370" />
               <div class="work__content">
                 <p class="work__text">мобільні додатки</p>
               </div>
@@ -149,7 +151,8 @@
           </li>
           <li>
             <div class="work__thumb">
-              <img src="images/box3.jpg" alt="Робимо дизайн" width="370" />
+              <img srcset="./images/work/work3.jpg 1x, ./images/work/work3@2x.jpg 2x" src="/images/work/work3.jpg"
+                alt="Робимо дизайн" width="370" />
               <div class="work__content">
                 <p class="work__text">дизайнерські рішення</p>
               </div>
@@ -163,7 +166,18 @@
         <h2 class="section-heading">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img class="team__img" src="images/img.jpg" alt="Ігор Дем'яненко" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/team/team4_lg.jpg 1x, 
+                images/team/team4_lg@2x.jpg 2x" type="image/jpg">
+
+              <source media="(min-width: 768px)" srcset="images/team/team4_md.jpg 1x, 
+                images/team/team4_md@2x.jpg 2x" type="image/jpg">
+
+              <source media="(max-width: 767px)" srcset="images/team/team4_mb.jpg 1x, 
+                images/team/team4_mb@2x.jpg 2x" type="image/jpg">
+              <img class="team__img" src="images/team/team4_mb.jpg" alt="Ігор Дем'яненко" />
+            </picture>
+
             <div class="team__info">
               <h3 class="team__member">Ігор Дем'яненко</h3>
               <p class="team__role" lang="en">Product Designer</p>
@@ -204,7 +218,17 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="images/img1.jpg" alt="Ольга Рєпіна" width="270" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/team/team1_lg.jpg 1x, 
+                            images/team/team1_lg@2x.jpg 2x" type="image/jpg">
+
+              <source media="(min-width: 768px)" srcset="images/team/team1_md.jpg 1x, 
+                            images/team/team1_md@2x.jpg 2x" type="image/jpg">
+
+              <source media="(max-width: 767px)" srcset="images/team/team1_mb.jpg 1x, 
+                            images/team/team1_mb@2x.jpg 2x" type="image/jpg">
+              <img class="team__img" src="images/team/team1_mb.jpg" alt="Ольга Рєпіна" />
+            </picture>
             <div class="team__info">
               <h3 class="team__member">Ольга Рєпіна</h3>
               <p class="team__role" lang="en">Frontend Developer</p>
@@ -245,7 +269,17 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="images/img2.jpg" alt="Микола Тарасов" width="270" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/team/team2_lg.jpg 1x, 
+                            images/team/team2_lg@2x.jpg 2x" type="image/jpg">
+
+              <source media="(min-width: 768px)" srcset="images/team/team2_md.jpg 1x, 
+                            images/team/team2_md@2x.jpg 2x" type="image/jpg">
+
+              <source media="(max-width: 767px)" srcset="images/team/team2_mb.jpg 1x, 
+                            images/team/team2_mb@2x.jpg 2x" type="image/jpg">
+              <img class="team__img" src="images/team/team2_mb.jpg" alt="Микола Тарасов" />
+            </picture>
             <div class="team__info">
               <h3 class="team__member">Микола Тарасов</h3>
               <p class="team__role" lang="en">Marketing</p>
@@ -286,7 +320,17 @@
           </li>
 
           <li class="team__item">
-            <img class="team__img" src="images/img3.jpg" alt=">Михайло Єрмаков" width="270" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/team/team3_lg.jpg 1x, 
+                                        images/team/team3_lg@2x.jpg 2x" type="image/jpg">
+
+              <source media="(min-width: 768px)" srcset="images/team/team3_md.jpg 1x, 
+                                        images/team/team3_md@2x.jpg 2x" type="image/jpg">
+
+              <source media="(max-width: 767px)" srcset="images/team/team3_mb.jpg 1x, 
+                                        images/team/team3_mb@2x.jpg 2x" type="image/jpg">
+              <img class="team__img" src="images/team/team3_mb.jpg" alt="Михайло Єрмаков" />
+            </picture>
             <div class="team__info">
               <h3 class="team__member">Михайло Єрмаков</h3>
               <p class="team__role" lang="en">UI Designer</p>
@@ -407,9 +451,8 @@
           <a href="tel:+1 212-772-4150" class="mobile-menu_contacts-tel">+1 212-772-4150</a>
         </li>
         <li class="mobile-menu_contacts_item">
-          <a href="mailto:info@devstudio.com"
-            class="mobile-menu_contacts-mail">info@devstudio.com</a>
-          </li>
+          <a href="mailto:info@devstudio.com" class="mobile-menu_contacts-mail">info@devstudio.com</a>
+        </li>
       </ul>
       <ul class="mobile-menu__social">
         <li class="mobile-menu_social-item">
@@ -552,7 +595,8 @@
 
         <div class="modal-form__policy">
           <input class="modal-form__checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="policy">
-          <label class="modal-form__policy-label" for="policy">Погоджуюся з розсилкою та приймаю<a href="" class="modal-form__policy-link">Умови договору</a>
+          <label class="modal-form__policy-label" for="policy">Погоджуюся з розсилкою та приймаю<a href=""
+              class="modal-form__policy-link">Умови договору</a>
           </label>
         </div>
         <div class="modal-form__submit">
