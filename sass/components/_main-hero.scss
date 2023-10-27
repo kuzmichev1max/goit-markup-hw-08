@@ -1,5 +1,7 @@
 .section-hero {
   height: 400px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 118px;
   padding-bottom: 118px;
@@ -7,31 +9,26 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/hero/hero-sm.jpg),
-    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
 
   @include mq(retina) {
-    background-image: url(../images/hero/hero-sm@2x.jpg),
-      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm@2x.jpg);
   }
 
   @include mq(tablet) {
-    background-image: url(../images/hero/hero-md.jpg),
-      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md.jpg);
     @include mq(retina) {
-      background-image: url(../images/hero/hero-md@2x.jpg),
-        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md@2x.jpg);
     }
   }
 
   @include mq(desktop) {
-    background-image: url(../images/hero/hero-lg.jpg),
-      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg.jpg);
 
     @include mq(retina) {
-      background-image: url(../images/hero/hero-lg@2x.jpg),
-        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+      background-image: 
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg@2x.jpg);
     }
   }
 
