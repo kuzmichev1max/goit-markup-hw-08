@@ -23,6 +23,13 @@
   margin: 0 auto;
   position: relative;
 
+  @media screen and (max-width: 479px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media screen and (min-width: 480px) {
     position: absolute;
     top: 50%;
@@ -59,6 +66,10 @@
   letter-spacing: 0.6px;
   color: var(--color-caption);
   line-height: calc(30 / 20);
+
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
 
   @media screen and (min-width: 1200px) {
     line-height: calc(23 / 20);
@@ -111,6 +122,11 @@
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
+  @media screen and (max-width: 479px) {
+    height: 30px;
+  }
+
   &::placeholder {
     line-height: calc(14 / 12);
     font-size: 12px;
@@ -150,6 +166,12 @@
   letter-spacing: 0.42px;
   font-size: 12px;
 
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &::before {
     margin-right: 7px;
 
@@ -160,6 +182,11 @@
     border: 2px solid var(--color-caption);
     border-radius: 2px;
     cursor: pointer;
+    
+    @media screen and (max-width: 479px){
+      width: 11px;
+      height: 10px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -170,6 +197,11 @@
 }
 
 .modal-form__checkbox {
+
+  // @media screen and (max-width: 479px) {
+  //   display: none;
+  // }
+
   &:focus + .modal-form__policy-label::before {
     outline: 1px solid rgba(0, 0, 255, 0.5);
   }

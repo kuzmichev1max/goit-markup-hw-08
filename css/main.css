@@ -619,19 +619,48 @@ img {
 
 .hero-portfolio__filters {
   display: flex;
-  justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .hero-portfolio__filters {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-portfolio__filters {
+    margin-bottom: 50px;
+  }
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .projects-list {
+    justify-content: start;
+  }
 }
 
 .projects-list__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .projects-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list__item {
+    width: 370px;
+  }
 }
 
 .projects-list__link {
@@ -642,14 +671,6 @@ img {
 }
 .projects-list__link:hover .projects-overlay__description, .projects-list__link:focus .projects-overlay__description {
   transform: translateY(0);
-}
-
-.projects-list__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.projects-list__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 
 .projects-list__description {
@@ -693,12 +714,23 @@ img {
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 365px) {
+  .projects-overlay__description {
+    padding: 43px 24px;
+  }
+}
 
 .projects-overlay__text {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.54px;
   color: var(--color-invert);
+}
+@media screen and (max-width: 365px) {
+  .projects-overlay__text {
+    font-size: 15px;
+    line-height: 1.8666666667;
+  }
 }
 
 .backdrop {
@@ -731,6 +763,14 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
@@ -757,6 +797,11 @@ img {
   letter-spacing: 0.6px;
   color: var(--color-caption);
   line-height: 1.5;
+}
+@media screen and (max-width: 450px) {
+  .modal__title {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -808,6 +853,11 @@ img {
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .modal-form__input {
+    height: 30px;
+  }
+}
 .modal-form__input::-moz-placeholder {
   line-height: 1.1666666667;
   font-size: 12px;
@@ -850,6 +900,12 @@ img {
   letter-spacing: 0.42px;
   font-size: 12px;
 }
+@media screen and (max-width: 479px) {
+  .modal-form__policy-label {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .modal-form__policy-label::before {
   margin-right: 7px;
   content: "";
@@ -859,6 +915,12 @@ img {
   border: 2px solid var(--color-caption);
   border-radius: 2px;
   cursor: pointer;
+}
+@media screen and (max-width: 479px) {
+  .modal-form__policy-label::before {
+    width: 11px;
+    height: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form__policy-label {
@@ -1199,7 +1261,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .mobile-menu__list {
-    margin-bottom: 202px;
+    margin-bottom: 152px;
   }
 }
 
@@ -1230,6 +1292,11 @@ img {
 
 .mobile-menu__contacts {
   margin-bottom: 64px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__contacts {
+    margin-bottom: 35px;
+  }
 }
 
 .mobile-menu_contacts-tel {
@@ -1268,6 +1335,7 @@ img {
 @media screen and (max-width: 479px) {
   .mobile-menu__social {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1294,4 +1362,10 @@ img {
   font-weight: 500;
   line-height: 1.2222222222;
   letter-spacing: 0.36px;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu_social-link {
+    font-size: 18px;
+    line-height: 1.4666666667;
+  }
 }/*# sourceMappingURL=main.css.map */
